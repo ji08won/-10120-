@@ -11,9 +11,9 @@
 <div class="container">
     <h1>물리1 퀴즈 앱</h1>
 
-    <!-- 설명 페이지 -->
-    <div id="description-pages">
-        <div class="description-page" id="page-1">
+    <!-- 설명 영역 -->
+    <div id="description-area">
+        <div class="description-section" id="section-1">
             <h2>운동과 힘</h2>
             <ul>
                 <li>운동의 표현: 위치, 속도, 가속도를 통해 물체의 운동을 표현합니다.</li>
@@ -28,7 +28,7 @@
                 </li>
             </ul>
         </div>
-        <div class="description-page" id="page-2">
+        <div class="description-section" id="section-2">
             <h2>에너지와 일</h2>
             <ul>
                 <li>일의 정의: 힘이 물체를 이동시키는 데 한 일을 일이라 하며, 힘과 이동 거리의 곱으로 계산됩니다.</li>
@@ -37,7 +37,7 @@
                 <li>역학적 에너지 보존 법칙: 외부에서 힘이 작용하지 않는 계에서 운동 에너지와 위치 에너지의 합은 일정하게 유지됩니다.</li>
             </ul>
         </div>
-        <div class="description-page" id="page-3">
+        <div class="description-section" id="section-3">
             <h2>열과 에너지</h2>
             <ul>
                 <li>온도와 열: 온도는 물질의 열적 상태를 나타내며, 열은 온도 차이로 인해 이동하는 에너지입니다.</li>
@@ -46,7 +46,7 @@
                 <li>열기관: 열 에너지를 이용하여 일을 하는 기계입니다. 예를 들어, 증기기관, 내연기관 등이 있습니다.</li>
             </ul>
         </div>
-        <div class="description-page" id="page-4">
+        <div class="description-section" id="section-4">
             <h2>파동과 빛</h2>
             <ul>
                 <li>파동의 기본 개념: 파동은 매질을 통해 에너지를 전달하는 현상으로, 진동, 주기, 파장, 속도 등으로 설명할 수 있습니다.</li>
@@ -58,8 +58,8 @@
     </div>
 
     <div class="navigation-buttons">
-        <button id="prev-button" onclick="changePage(-1)" style="display:none;">이전</button>
-        <button id="next-button" onclick="changePage(1)">다음</button>
+        <button id="prev-button" onclick="changeSection(-1)" style="display:none;">이전</button>
+        <button id="next-button" onclick="changeSection(1)">다음</button>
     </div>
 
     <button onclick="startQuiz()">퀴즈 시작</button>

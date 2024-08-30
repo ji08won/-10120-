@@ -101,32 +101,32 @@ const quizData = [
     }
 ];
 
-let currentPage = 1;
-const totalPages = 4;
+let currentSection = 1;
+const totalSections = 4;
 
 function startQuiz() {
-    document.getElementById('description-pages').style.display = 'none';
+    document.getElementById('description-area').style.display = 'none';
     document.getElementById('quiz-area').style.display = 'block';
     loadQuiz();
 }
 
-function changePage(direction) {
+function changeSection(direction) {
     const prevButton = document.getElementById('prev-button');
     const nextButton = document.getElementById('next-button');
     
-    currentPage += direction;
-    if (currentPage < 1) currentPage = 1;
-    if (currentPage > totalPages) currentPage = totalPages;
+    currentSection += direction;
+    if (currentSection < 1) currentSection = 1;
+    if (currentSection > totalSections) currentSection = totalSections;
 
-    updatePageVisibility();
+    updateSectionVisibility();
 
-    prevButton.style.display = currentPage === 1 ? 'none' : 'inline-block';
-    nextButton.style.display = currentPage === totalPages ? 'none' : 'inline-block';
+    prevButton.style.display = currentSection === 1 ? 'none' : 'inline-block';
+    nextButton.style.display = currentSection === totalSections ? 'none' : 'inline-block';
 }
 
-function updatePageVisibility() {
-    for (let i = 1; i <= totalPages; i++) {
-        document.getElementById(`page-${i}`).style.display = i === currentPage ? 'block' : 'none';
+function updateSectionVisibility() {
+    for (let i = 1; i <= totalSections; i++) {
+        document.getElementById(`section-${i}`).style.display = i === currentSection ? 'inline-block' : 'none';
     }
 }
 

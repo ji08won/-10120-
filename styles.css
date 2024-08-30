@@ -13,7 +13,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 800px;
+    width: 1000px;
     text-align: center;
 }
 
@@ -21,16 +21,23 @@ h1 {
     margin-bottom: 20px;
 }
 
-#description-pages {
-    display: none;
+#description-area {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px 0;
+    gap: 20px;
 }
 
-.description-page {
-    display: none;
+.description-section {
+    display: inline-block;
+    width: 100%;
+    min-width: 300px;
+    box-sizing: border-box;
     font-size: 1.5em; /* 글씨 크기 조정 */
 }
 
-.description-page h2 {
+.description-section h2 {
     font-size: 2em; /* 제목 글씨 크기 조정 */
 }
 
